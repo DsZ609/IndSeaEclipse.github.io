@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- HIGH INTENSITY GOOGLE SEO INDEX BOOSTER -->
+    <title>IND/SEA Eclipse | #1 Indian Rust Server | Vanilla Solo/Duo/Trio</title>
+    <meta name="description" content="Play on IND/SEA Eclipse, the best high-performance Indian Rust Server. Dedicated lowest latency vanilla gameplay for South Asia with strict Solo/Duo/Trio limits, weekly Friday wipes, and active admins.">
+    <meta name="keywords" content="indian rust server, ind sea eclipse, rust server india, rust india, rust sea server, solo duo trio rust, vanilla rust server, low ping rust asia, best indian rust server, rust game server india, eclipse rust">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="IND/SEA Eclipse Team">
+    
+    <!-- Open Graph for Discord/Social Previews -->
+    <meta property="og:title" content="IND/SEA Eclipse | Premier Indian Rust Server">
+    <meta property="og:description" content="Host location optimized for lowest latency in Indian and Southeast Asian territories. Vanilla balance, 100% fair play, weekly Friday wipes.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://placehold.co/1200x630/030303/00E5FF?text=IND/SEA+ECLIPSE">
+    
+    <!-- Google Rich Snippets / JSON-LD GameServer Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "GameServer",
+      "name": "IND/SEA Eclipse Rust Server",
+      "game": "Rust",
+      "serverStatus": "Online",
+      "address": "107.155.95.122:30041",
+      "url": "https://discord.gg/HEbN8ZeSqd",
+      "description": "The premier vanilla Solo/Duo/Trio Rust server for Indian and Southeast Asian regions featuring weekly Friday wipes.",
+      "keywords": "indian rust server, ind sea eclipse, rust server india"
+    }
+    </script>
+
+    <!-- Tailwind CSS Engine -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- React & Babel CDN for in-browser JSX compilation -->
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Google Fonts Integration -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Outfit:wght@300;400;600;800&family=Unbounded:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: #030303;
+            color: #f3f4f6;
+            overflow-x: hidden;
+        }
+
+        .font-unbounded {
+            font-family: 'Unbounded', sans-serif;
+        }
+
+        .font-mono-jb {
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        /* Tactical Cyber Grid backdrop */
+        .cyber-grid {
+            background-size: 40px 40px;
+            background-image: 
+                linear-gradient(to right, rgba(6, 182, 212, 0.04) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(6, 182, 212, 0.04) 1px, transparent 1px);
+        }
+
+        /* Screen Scanline CRT filter effect */
+        .scanlines {
+            position: relative;
+            overflow: hidden;
+        }
+        .scanlines::before {
+            content: " ";
+            display: block;
+            position: absolute;
+            top: 0; left: 0; bottom: 0; right: 0;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.15) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.02), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.02));
+            z-index: 2;
+            background-size: 100% 3px, 3px 100%;
+            pointer-events: none;
+        }
+
+        /* Ambient Neon Glow utilities */
+        .neon-glow-cyan {
+            box-shadow: 0 0 15px rgba(6, 182, 212, 0.25);
+        }
+        .text-shadow-cyan {
+            text-shadow: 0 0 10px rgba(6, 182, 212, 0.6);
+        }
+
+        /* Satellite Map Sweep Radar Animation */
+        @keyframes radar-sweep {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        .radar-sweep-line {
+            transform-origin: center;
+            animation: radar-sweep 5s linear infinite;
+        }
+
+        /* Custom scrollbars */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #050505;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #0ea5e9;
+            border-radius: 3px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #06b6d4;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="root"></div>
+
+    <!-- React App Script Compiled in Browser via Babel -->
+    <script type="text/babel">
+        const Icons = {
+            Lightning: () => (
+                <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+            ),
+            Copy: () => (
+                <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
+                </svg>
+            ),
+            Check: () => (
+                <svg className="w-5 h-5 mr-2 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+                </svg>
+            ),
+            Discord: () => (
+                <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.094 13.094 0 0 1-1.873-.894.077.077 0 0 1-.008-.128c.126-.093.252-.19.372-.287a.075.075 0 0 1 .077-.011c3.92 1.793 8.18 1.793 12.061 0a.073.073 0 0 1 .078.009c.12.099.246.195.373.289a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.156-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.156 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.156-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.156 2.418z"/>
+                </svg>
+            ),
+            ExternalLink: () => (
+                <svg className="w-5 h-5 ml-2 inline animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+            ),
+            Map: () => (
+                <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                </svg>
+            ),
+            Server: () => (
+                <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
+                </svg>
+            ),
+            ShieldAlert: () => (
+                <svg className="w-5 h-5 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                </svg>
+            ),
+            Users: () => (
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+            ),
+            Crown: () => (
+                <svg className="w-5 h-5 mr-2 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                </svg>
+            )
+        };
+
+        function App() {
+            const serverId = "39073659";
+            const serverIp = "107.155.95.122:30041";
+            const discordLink = "https://discord.gg/HEbN8ZeSqd";
+            const battlemetricsLink = `https://www.battlemetrics.com/servers/rust/${serverId}`;
+
+            const [copied, setCopied] = React.useState(false);
+            const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+            const [apiStatus, setApiStatus] = React.useState('loading');
+
+            const [serverData, setServerData] = React.useState({
+                name: "IND/SEA Eclipse | Vanilla | Solo/Duo/Trio",
+                playersOnline: 0,
+                maxPlayers: 60,
+                queue: 0,
+                fps: 260,
+                uptime: "Active (Stable)",
+                lastWipe: "Recent Friday",
+                worldSize: 3500,
+                rank: 342,
+                mapName: "Procedural Map"
+            });
+
+            const [shopCart, setShopCart] = React.useState(null);
+            const [isCheckoutOpen, setIsCheckoutOpen] = React.useState(false);
+            const [expandedRule, setExpandedRule] = React.useState(null);
+            const [timeLeft, setTimeLeft] = React.useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+
+            // Countdown to Weekly Friday 11:30 AM IST Wipe
+            React.useEffect(() => {
+                const calculateTimeRemaining = () => {
+                    const now = new Date();
+                    
+                    // Target: Every Friday at 11:30 AM IST (Indian Standard Time).
+                    // 11:30 AM IST is 6:00 AM UTC.
+                    const target = new Date(Date.UTC(
+                        now.getUTCFullYear(),
+                        now.getUTCMonth(),
+                        now.getUTCDate(),
+                        6, 0, 0, 0 // 6:00 AM UTC
+                    ));
+
+                    const currentDay = now.getUTCDay(); // 0 = Sunday, 5 = Friday, 6 = Saturday
+                    let daysUntilFriday = (5 - currentDay + 7) % 7;
+
+                    // If it is Friday, check if we've already passed 11:30 AM IST (6:00 UTC) today
+                    if (daysUntilFriday === 0 && now.getTime() >= target.getTime()) {
+                        daysUntilFriday = 7; // Target next week's Friday
+                    }
+
+                    target.setUTCDate(target.getUTCDate() + daysUntilFriday);
+                    
+                    const difference = target.getTime() - now.getTime();
+
+                    if (difference <= 0) {
+                        setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+                    } else {
+                        const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+                        const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+                        const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+                        setTimeLeft({ days, hours, minutes, seconds });
+                    }
+                };
+
+                calculateTimeRemaining();
+                const timer = setInterval(calculateTimeRemaining, 1000);
+                return () => clearInterval(timer);
+            }, []);
+
+            React.useEffect(() => {
+                const fetchServerInfo = async () => {
+                    const targetUrl = `https://api.battlemetrics.com/servers/${serverId}`;
+                    
+                    // Core Update function to apply the Battlemetrics JSON parameters
+                    const applyData = (json) => {
+                        const attributes = json.data?.attributes || {};
+                        const details = attributes.details || {};
+                        
+                        const livePlayers = attributes.players ?? 0;
+                        const liveMax = attributes.maxPlayers ?? 60;
+                        const liveRank = attributes.rank ?? 342;
+                        const liveName = attributes.name || "IND/SEA Eclipse | Vanilla | Solo/Duo/Trio";
+                        const mapName = details.map || "Procedural Map";
+                        const worldSize = details.rust_world_size ?? 3500;
+                        const serverFps = details.rust_fps ?? 260;
+                        const queueCount = details.rust_queued_players ?? attributes.queued ?? 0;
+
+                        let liveUptime = "Active (Stable)";
+                        if (details.rust_uptime) {
+                            const hours = Math.floor(details.rust_uptime / 3600);
+                            const minutes = Math.floor((details.rust_uptime % 3600) / 60);
+                            liveUptime = `${hours}h ${minutes}m`;
+                        } else if (attributes.status === 'online') {
+                            liveUptime = "Active (Stable)";
+                        }
+
+                        setServerData(prev => ({
+                            ...prev,
+                            name: liveName,
+                            playersOnline: livePlayers,
+                            maxPlayers: liveMax,
+                            rank: liveRank,
+                            mapName: mapName,
+                            worldSize: worldSize,
+                            fps: serverFps,
+                            queue: queueCount,
+                            uptime: liveUptime
+                        }));
+                        setApiStatus('success');
+                    };
+
+                    try {
+                        setApiStatus('loading');
+                        
+                        // 1. DIRECT FETCH FIRST (CORS is natively allowed by Battlemetrics API)
+                        // This bypasses Jio/Airtel proxy blockades and Sandbox restriction flags
+                        const response = await fetch(targetUrl);
+                        if (response.ok) {
+                            const json = await response.json();
+                            if (json && json.data) {
+                                applyData(json);
+                                return; // Direct success!
+                            }
+                        }
+                        throw new Error("Direct API query failed or was blocked by client sandbox.");
+                    } catch (err) {
+                        console.warn("Direct Battlemetrics fetch failed. Initiating fallback proxy tunnel...", err);
+                        
+                        // 2. FALLBACK TUNNELING (Using highly robust CORS Proxy channels)
+                        const proxies = [
+                            `https://api.allorigins.win/raw?url=${encodeURIComponent(targetUrl)}`,
+                            `https://corsproxy.io/?url=${encodeURIComponent(targetUrl)}`
+                        ];
+
+                        for (const proxy of proxies) {
+                            try {
+                                const response = await fetch(proxy);
+                                if (response.ok) {
+                                    const json = await response.json();
+                                    if (json && json.data) {
+                                        applyData(json);
+                                        return; // Proxy success!
+                                    }
+                                }
+                            } catch (proxyErr) {
+                                console.warn(`Tunnel route failed: ${proxy}`, proxyErr);
+                            }
+                        }
+
+                        // Set Status to Error only if ALL communication avenues are down
+                        setApiStatus('error');
+                    }
+                };
+
+                fetchServerInfo();
+                const interval = setInterval(fetchServerInfo, 30000);
+                return () => clearInterval(interval);
+            }, [serverId]);
+
+            const handleCopyIP = () => {
+                const el = document.createElement('textarea');
+                el.value = serverIp;
+                document.body.appendChild(el);
+                el.select();
+                document.execCommand('copy');
+                document.body.removeChild(el);
+                setCopied(true);
+                setTimeout(() => setCopied(false), 2500);
+            };
+
+            const rules = [
+                {
+                    title: "Vanilla Survival Principles",
+                    icon: "🌲",
+                    summary: "Pure gameplay, exactly how the developers intended.",
+                    details: "No pay-to-win kits, custom gathering multipliers, or teleport shortcuts. Standard decay, standard stack sizes, and absolute level-playing field."
+                },
+                {
+                    title: "Team / Group Limits (Max 3)",
+                    icon: "👥",
+                    summary: "Strict Solo, Duo, or Trio limits.",
+                    details: "Alliance rules apply. No roaming, raiding, or living with more than 3 players. Swapping players requires full authorization, clearing out locks, and notification to admins."
+                },
+                {
+                    title: "Anti-Cheat & Active Admins",
+                    icon: "🛡️",
+                    summary: "Zero-tolerance for hackers, scripts, or abuse.",
+                    details: "We utilize server side anticheat extensions. Active, experienced admins review reports immediately. Game-bans and scripting results in permanent community ban."
+                },
+                {
+                    title: "Community Conduct & Toxicity",
+                    icon: "💬",
+                    summary: "Competitive tension is fine, toxicity is not.",
+                    details: "No racial slurs, hate speech, or targeted out-of-game harassment. Respect the admins and keep the chat focused on competitive survival banter."
+                }
+            ];
+
+            const shopPackages = [
+                {
+                    id: 'bronze',
+                    name: 'Eclipse Bronze Perks',
+                    price: 'Upcoming Package',
+                    statusBadge: 'Upcoming',
+                    color: 'border-zinc-800 text-cyan-400 opacity-80 hover:opacity-100',
+                    shadow: 'hover:shadow-[0_0_15px_rgba(6,182,212,0.1)]',
+                    description: 'Exclusive queue priority bypass and community cosmetics are coming soon. Keep an eye on our announcement channel.'
+                },
+                {
+                    id: 'silver',
+                    name: 'Eclipse Silver Perks',
+                    price: 'Upcoming Package',
+                    statusBadge: 'Upcoming',
+                    color: 'border-zinc-800 text-cyan-200 opacity-80 hover:opacity-100',
+                    shadow: 'hover:shadow-[0_0_20px_rgba(6,182,212,0.2)]',
+                    description: 'Advanced custom tag support, Discord sync perks, and neon badges are coming soon. Keep an eye on our announcement channel.'
+                },
+                {
+                    id: 'gold',
+                    name: 'Eclipse Platinum Founder',
+                    price: 'Upcoming Package',
+                    statusBadge: 'Upcoming',
+                    color: 'border-zinc-800 text-yellow-300 opacity-80 hover:opacity-100',
+                    shadow: 'hover:shadow-[0_0_20px_rgba(234,179,8,0.15)]',
+                    description: 'Lifetime supporting tokens, ultimate customized badges, and hall-of-fame roles are coming soon. Keep an eye on our announcement channel.'
+                }
+            ];
+
+            const handleOpenUpcomingNotice = (pkg) => {
+                setShopCart(pkg);
+                setIsCheckoutOpen(true);
+            };
+
+            return (
+                <div className="min-h-screen bg-[#030303] relative scanlines text-gray-100 selection:bg-cyan-500 selection:text-black">
+                    
+                    {/* Cyber Grid Pattern Backdrop */}
+                    <div className="absolute inset-0 cyber-grid pointer-events-none z-0"></div>
+
+                    {/* Decorative Cyan Radial Ambient Glows */}
+                    <div className="absolute top-10 left-1/4 w-96 h-96 bg-cyan-950/5 rounded-full blur-[120px] pointer-events-none z-0"></div>
+                    <div className="absolute top-[800px] right-1/4 w-96 h-96 bg-cyan-950/10 rounded-full blur-[150px] pointer-events-none z-0"></div>
+
+                    {}
+                    {/* Navigation Header */}
+                    <header className="sticky top-0 z-40 backdrop-blur-md bg-[#030303]/90 border-b border-cyan-950">
+                        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                            <div className="flex items-center justify-between h-20">
+                                {/* Logo */}
+                                <div className="flex items-center gap-2">
+                                    <a href="#" className="flex items-center">
+                                        <span className="font-unbounded text-xl sm:text-2xl font-black text-white tracking-widest text-shadow-cyan uppercase flex items-center">
+                                            ECLIPSE
+                                            <span className="text-cyan-400 font-mono-jb text-xs sm:text-sm ml-2 tracking-normal font-light">// IND-SEA</span>
+                                        </span>
+                                    </a>
+                                </div>
+
+                                {/* Desktop Navigation */}
+                                <nav className="hidden md:flex space-x-8 items-center">
+                                    <a href="#live" className="text-xs font-bold tracking-wider text-gray-400 hover:text-cyan-400 transition-colors uppercase">Live Info</a>
+                                    <a href="#stats" className="text-xs font-bold tracking-wider text-gray-400 hover:text-cyan-400 transition-colors uppercase">Telemetry</a>
+                                    <a href="#rules" className="text-xs font-bold tracking-wider text-gray-400 hover:text-cyan-400 transition-colors uppercase">Rules</a>
+                                    <a href="#team" className="text-xs font-bold tracking-wider text-gray-400 hover:text-cyan-400 transition-colors uppercase">Administration</a>
+                                    <a href="#shop" className="text-xs font-bold tracking-wider text-gray-400 hover:text-cyan-400 transition-colors uppercase flex items-center gap-1">
+                                        Shop <span className="bg-cyan-950 text-cyan-400 text-[9px] px-1.5 py-0.2 uppercase border border-cyan-800">Soon</span>
+                                    </a>
+                                </nav>
+
+                                {/* Discord CTA Desktop Button */}
+                                <div className="hidden md:block">
+                                    <a 
+                                        href={discordLink}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className="inline-flex items-center justify-center px-5 py-2 border border-cyan-900 bg-cyan-950/30 hover:bg-cyan-400 hover:text-black font-semibold text-xs tracking-wider uppercase transition-all duration-300 rounded-none hover:shadow-[0_0_15px_rgba(6,182,212,0.3)]"
+                                    >
+                                        <Icons.Discord />
+                                        Discord
+                                    </a>
+                                </div>
+
+                                {/* Mobile Hamburger menu button */}
+                                <div className="md:hidden">
+                                    <button 
+                                        onClick={() => setIsMenuOpen(!isMenuOpen)}
+                                        className="text-gray-400 hover:text-cyan-400 focus:outline-none p-2 border border-cyan-950"
+                                    >
+                                        <span className="sr-only">Open Menu</span>
+                                        <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            {isMenuOpen ? (
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                                            ) : (
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                                            )}
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Mobile Navigation Panel */}
+                        {isMenuOpen && (
+                            <div className="md:hidden bg-[#050505] border-b border-cyan-950 px-4 pt-2 pb-6 space-y-2 z-50 relative">
+                                <a 
+                                    href="#live" 
+                                    onClick={() => setIsMenuOpen(false)}
+                                    className="block px-3 py-2 text-sm font-medium text-gray-300 hover:text-cyan-400"
+                                >
+                                    Live Info
+                                </a>
+                                <a 
+                                    href="#stats" 
+                                    onClick={() => setIsMenuOpen(false)}
+                                    className="block px-3 py-2 text-sm font-medium text-gray-300 hover:text-cyan-400"
+                                >
+                                    Telemetry
+                                </a>
+                                <a 
+                                    href="#rules" 
+                                    onClick={() => setIsMenuOpen(false)}
+                                    className="block px-3 py-2 text-sm font-medium text-gray-300 hover:text-cyan-400"
+                                >
+                                    Rules
+                                </a>
+                                <a 
+                                    href="#team" 
+                                    onClick={() => setIsMenuOpen(false)}
+                                    className="block px-3 py-2 text-sm font-medium text-gray-300 hover:text-cyan-400"
+                                >
+                                    Administration
+                                </a>
+                                <a 
+                                    href="#shop" 
+                                    onClick={() => setIsMenuOpen(false)}
+                                    className="block px-3 py-2 text-sm font-medium text-cyan-400"
+                                >
+                                    VIP Shop (Upcoming)
+                                </a>
+                                <div className="pt-4 px-3">
+                                    <a 
+                                        href={discordLink} 
+                                        target="_blank" 
+                                        rel="noreferrer"
+                                        className="w-full flex items-center justify-center px-4 py-3 border border-cyan-500 bg-cyan-950/20 text-cyan-400 font-bold uppercase tracking-wider text-xs hover:bg-cyan-400 hover:text-black transition-all"
+                                    >
+                                        <Icons.Discord />
+                                        Join Discord
+                                    </a>
+                                </div>
+                            </div>
+                        )}
+                    </header>
+
+                    {}
+                    {/* Hero Section */}
+                    <section id="live" className="relative pt-12 pb-24 px-4 sm:px-6 lg:px-8 z-10">
+                        <div className="max-w-7xl mx-auto">
+                            
+                            {/* Top Status Pill */}
+                            <div className="inline-flex items-center gap-2 bg-[#050505] border border-cyan-950 rounded-full px-4 py-1.5 mb-8">
+                                <span className="flex h-2.5 w-2.5 relative">
+                                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                                    <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500"></span>
+                                </span>
+                                <span className="font-mono-jb text-[10px] md:text-xs text-gray-400 tracking-widest uppercase font-medium">
+                                    Server Online • Asia • IND • SEA
+                                </span>
+                            </div>
+
+                            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                                {/* Hero Left Content */}
+                                <div className="lg:col-span-7 space-y-6">
+                                    <h1 className="font-unbounded text-5xl sm:text-6xl lg:text-7xl font-black text-white tracking-tight leading-none uppercase">
+                                        IND/SEA <br />
+                                        <span className="text-cyan-400 text-shadow-cyan">ECLIPSE</span>
+                                    </h1>
+                                    
+                                    <h2 className="font-mono-jb text-lg sm:text-xl text-cyan-200/90 tracking-wide font-light border-l-4 border-cyan-400 pl-4">
+                                        Vanilla • Solo • Duo • Trio
+                                    </h2>
+
+                                    <p className="text-gray-400 text-base leading-relaxed max-w-xl">
+                                        A purpose-built Rust experience for Indian & Southeast Asian players. Low ping. Active admins. Pure vanilla survival — no pay-to-win, no shortcuts.
+                                    </p>
+
+                                    {/* Action Buttons */}
+                                    <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                                        {/* Join Button */}
+                                        <a 
+                                            href={`steam://connect/${serverIp}`}
+                                            className="inline-flex items-center justify-center px-8 py-4 bg-cyan-400 text-black font-extrabold uppercase tracking-wider text-xs hover:bg-cyan-300 transition-all duration-200 shadow-[0_0_15px_rgba(6,182,212,0.3)] hover:-translate-y-0.5"
+                                        >
+                                            <Icons.Lightning />
+                                            Join Server
+                                        </a>
+
+                                        {/* Copy IP */}
+                                        <button 
+                                            onClick={handleCopyIP}
+                                            className="inline-flex items-center justify-center px-6 py-4 bg-zinc-950 border border-cyan-950 hover:border-cyan-400 text-cyan-400 font-bold uppercase tracking-wider text-xs transition-all duration-200"
+                                        >
+                                            {copied ? (
+                                                <React.Fragment>
+                                                    <Icons.Check />
+                                                    Copied!
+                                                </React.Fragment>
+                                            ) : (
+                                                <React.Fragment>
+                                                    <Icons.Copy />
+                                                    Copy IP
+                                                </React.Fragment>
+                                            )}
+                                        </button>
+
+                                        {/* Discord */}
+                                        <a 
+                                            href={discordLink}
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            className="inline-flex items-center justify-center px-6 py-4 bg-transparent border border-zinc-900 hover:border-cyan-950 text-gray-300 hover:text-white font-bold uppercase tracking-wider text-xs transition-all duration-200"
+                                        >
+                                            <Icons.Discord />
+                                            Discord
+                                        </a>
+                                    </div>
+                                </div>
+
+                                {/* Hero Right Cyber Cards - Matches layout in "image-1.png.jpg" */}
+                                <div className="lg:col-span-5 space-y-4">
+                                    
+                                    {/* Online Player Card */}
+                                    <div className="relative bg-black/60 p-6 border border-zinc-900/80 rounded-none shadow-lg">
+                                        {/* Cyber corner marks exactly like image-1.png.jpg */}
+                                        <div className="absolute top-0 left-0 w-2 h-2 border-t border-l border-cyan-400"></div>
+                                        <div className="absolute top-0 right-0 w-2 h-2 border-t border-r border-cyan-400"></div>
+                                        <div className="absolute bottom-0 left-0 w-2 h-2 border-b border-l border-cyan-400"></div>
+                                        <div className="absolute bottom-0 right-0 w-2 h-2 border-b border-r border-cyan-400"></div>
+
+                                        <div className="flex items-center gap-2 mb-1 text-gray-400 font-mono-jb text-[10px] tracking-widest uppercase">
+                                            <Icons.Users />
+                                            PLAYERS
+                                        </div>
+                                        
+                                        <div className="flex items-baseline gap-1">
+                                            <span className="font-unbounded text-5xl font-black text-white">
+                                                {apiStatus === 'loading' ? (
+                                                    <span className="text-xl font-normal text-cyan-400 font-mono-jb">Syncing...</span>
+                                                ) : apiStatus === 'error' ? (
+                                                    <span className="text-xl font-normal text-red-500 font-mono-jb">Sync Error</span>
+                                                ) : (
+                                                    serverData.playersOnline
+                                                )}
+                                            </span>
+                                            {apiStatus === 'success' && (
+                                                <span className="text-gray-500 font-bold text-lg font-mono-jb">
+                                                    /{serverData.maxPlayers}
+                                                </span>
+                                            )}
+                                        </div>
+                                        
+                                        {/* Capacity Progress Bar */}
+                                        <div className="w-full bg-zinc-950 h-1 mt-4 overflow-hidden">
+                                            <div 
+                                                className="bg-cyan-400 h-full transition-all duration-500"
+                                                style={{ width: `${Math.min(100, (serverData.playersOnline / serverData.maxPlayers) * 100)}%` }}
+                                            ></div>
+                                        </div>
+                                    </div>
+
+                                    {/* Queue Status Card */}
+                                    <div className="relative bg-black/60 p-6 border border-zinc-900/80 rounded-none shadow-lg">
+                                        <div className="absolute top-0 left-0 w-2 h-2 border-t border-l border-cyan-400"></div>
+                                        <div className="absolute top-0 right-0 w-2 h-2 border-t border-r border-cyan-400"></div>
+                                        <div className="absolute bottom-0 left-0 w-2 h-2 border-b border-l border-cyan-400"></div>
+                                        <div className="absolute bottom-0 right-0 w-2 h-2 border-b border-r border-cyan-400"></div>
+
+                                        <div className="text-gray-400 font-mono-jb text-[10px] tracking-widest uppercase mb-1">
+                                            QUEUE
+                                        </div>
+                                        
+                                        <span className="font-unbounded text-5xl font-black text-white">
+                                            {apiStatus === 'loading' ? "0" : serverData.queue}
+                                        </span>
+                                        <span className="ml-2 font-mono-jb text-xs text-gray-500">In Line</span>
+                                    </div>
+
+                                    {/* Connect Address Card */}
+                                    <div className="relative bg-black/60 p-6 border border-zinc-900/80 rounded-none shadow-lg">
+                                        <div className="absolute top-0 left-0 w-2 h-2 border-t border-l border-cyan-400"></div>
+                                        <div className="absolute top-0 right-0 w-2 h-2 border-t border-r border-cyan-400"></div>
+                                        <div className="absolute bottom-0 left-0 w-2 h-2 border-b border-l border-cyan-400"></div>
+                                        <div className="absolute bottom-0 right-0 w-2 h-2 border-b border-r border-cyan-400"></div>
+
+                                        <div className="text-gray-400 font-mono-jb text-[10px] tracking-widest uppercase mb-2">
+                                            CONNECT
+                                        </div>
+                                        
+                                        <div className="text-cyan-400 font-mono-jb text-sm sm:text-base font-semibold tracking-wider select-all break-all">
+                                            {serverIp}
+                                        </div>
+                                        
+                                        <p className="text-[9px] text-gray-500 mt-2 font-mono-jb">Press F1 to console & run: client.connect {serverIp}</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    {}
+                    {/* Interactive Satellite Radar & Map Redirect Section */}
+                    <section className="relative px-4 sm:px-6 lg:px-8 pb-12 z-10">
+                        <div className="max-w-7xl mx-auto">
+                            <div className="bg-gradient-to-r from-cyan-950/20 to-black/90 border border-cyan-400/30 hover:border-cyan-400/70 transition-all duration-300 p-8 flex flex-col md:flex-row items-center justify-between gap-6 relative overflow-hidden">
+                                
+                                {/* Embedded Cyber Interactive Radar Visual Block */}
+                                <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/10 w-64 h-64 opacity-20 pointer-events-none hidden lg:block">
+                                    <svg viewBox="0 0 100 100" className="w-full h-full text-cyan-400">
+                                        <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" strokeWidth="0.5" strokeDasharray="3 3" />
+                                        <circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" strokeWidth="0.5" />
+                                        <circle cx="50" cy="50" r="15" fill="none" stroke="currentColor" strokeWidth="0.5" strokeDasharray="1 1" />
+                                        <line x1="50" y1="5" x2="50" y2="95" stroke="currentColor" strokeWidth="0.5" />
+                                        <line x1="5" y1="50" x2="95" y2="50" stroke="currentColor" strokeWidth="0.5" />
+                                        {/* Revolving Sweep Line */}
+                                        <line x1="50" y1="50" x2="81.8" y2="18.2" stroke="currentColor" strokeWidth="1.5" className="radar-sweep-line" />
+                                        {/* Random tactical markers representing players */}
+                                        <circle cx="42" cy="35" r="1.5" fill="currentColor" className="animate-ping" />
+                                        <circle cx="68" cy="55" r="1" fill="currentColor" />
+                                        <circle cx="30" cy="72" r="1" fill="currentColor" />
+                                    </svg>
+                                </div>
+
+                                <div className="space-y-3 max-w-2xl relative z-10">
+                                    <div className="flex flex-wrap items-center gap-2">
+                                        <span className="bg-cyan-500 text-black text-[9px] font-black tracking-widest px-2.5 py-0.5 uppercase rounded-sm">
+                                            LIVE SATELLITE MAP
+                                        </span>
+                                        <span className="text-gray-500 text-[10px] font-mono-jb">Verified Battlemetrics ID: {serverId}</span>
+                                    </div>
+                                    <h3 className="text-xl sm:text-2xl font-black text-white uppercase font-unbounded leading-snug">
+                                        View Live Procedural Map & Grid Coordinates
+                                    </h3>
+                                    <p className="text-gray-400 text-xs sm:text-sm leading-relaxed">
+                                        Track full server topography, base build locations, landscape distributions, and explore map generation scales live on Battlemetrics.
+                                    </p>
+                                </div>
+
+                                <div className="relative z-10 w-full md:w-auto flex-shrink-0">
+                                    <a 
+                                        href={battlemetricsLink} 
+                                        target="_blank" 
+                                        rel="noreferrer"
+                                        className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 bg-cyan-950/40 border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black font-extrabold tracking-wider uppercase text-xs transition-all duration-300 shadow-[0_0_15px_rgba(6,182,212,0.2)] hover:shadow-[0_0_25px_rgba(6,182,212,0.5)] rounded-none"
+                                    >
+                                        <Icons.Map />
+                                        View Current Map Coordinates
+                                        <Icons.ExternalLink />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    {}
+                    {/* Telemetry Section */}
+                    <section id="stats" className="relative py-20 bg-black/40 border-y border-cyan-950 px-4 sm:px-6 lg:px-8 z-10">
+                        <div className="max-w-7xl mx-auto">
+                            
+                            <div className="flex flex-col md:flex-row items-baseline justify-between mb-12 gap-4">
+                                <div>
+                                    <span className="text-cyan-400 font-mono-jb text-xs tracking-widest uppercase">System Diagnosis</span>
+                                    <h2 className="font-unbounded text-2xl sm:text-3xl font-black text-white uppercase mt-1">
+                                        Telemetry Dashboard
+                                    </h2>
+                                </div>
+                                
+                                <div className="flex items-center gap-3 text-xs font-mono-jb bg-[#050505] px-4 py-2 border border-zinc-900">
+                                    <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
+                                    <span className="text-gray-500">LIVE FEED</span>
+                                    <span className="text-zinc-700">|</span>
+                                    <span className="text-cyan-300">REFRESH: 30S</span>
+                                </div>
+                            </div>
+
+                            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                                
+                                {/* FPS Metric */}
+                                <div className="bg-[#050505] p-6 border border-zinc-900/60 relative">
+                                    <div className="absolute top-0 left-0 w-1.5 h-1.5 border-t border-l border-cyan-400"></div>
+                                    <div className="text-gray-500 font-mono-jb text-[10px] uppercase tracking-widest mb-1">Server Performance</div>
+                                    <div className="text-2xl sm:text-3xl font-unbounded font-bold text-white text-shadow-cyan">
+                                        {apiStatus === 'loading' ? (
+                                            <span className="text-sm font-normal text-gray-500 font-mono-jb">Syncing...</span>
+                                        ) : apiStatus === 'error' ? (
+                                            "260"
+                                        ) : (
+                                            serverData.fps
+                                        )} <span className="text-xs text-cyan-400 font-mono-jb">FPS</span>
+                                    </div>
+                                    <p className="text-[10px] text-gray-500 mt-2">Provides consistent high hit-reg accuracy & response</p>
+                                </div>
+
+                                {/* Uptime Metric */}
+                                <div className="bg-[#050505] p-6 border border-zinc-900/60 relative">
+                                    <div className="absolute top-0 left-0 w-1.5 h-1.5 border-t border-l border-cyan-400"></div>
+                                    <div className="text-gray-500 font-mono-jb text-[10px] uppercase tracking-widest mb-1">Continuous Uptime</div>
+                                    <div className="text-2xl sm:text-3xl font-unbounded font-bold text-white">
+                                        {apiStatus === 'loading' ? (
+                                            <span className="text-sm font-normal text-gray-500 font-mono-jb">Syncing...</span>
+                                        ) : (
+                                            serverData.uptime
+                                        )}
+                                    </div>
+                                    <p className="text-[10px] text-gray-500 mt-2">Automated high-speed server hardware restarts</p>
+                                </div>
+
+                                {/* Server Location */}
+                                <div className="bg-[#050505] p-6 border border-zinc-900/60 relative">
+                                    <div className="absolute top-0 left-0 w-1.5 h-1.5 border-t border-l border-cyan-400"></div>
+                                    <div className="text-gray-500 font-mono-jb text-[10px] uppercase tracking-widest mb-1">Server Location</div>
+                                    <div className="text-2xl sm:text-3xl font-unbounded font-bold text-cyan-400 uppercase">
+                                        Asia
+                                    </div>
+                                    <p className="text-[10px] text-gray-500 mt-2">Low-latency optimized routing for IND & SEA</p>
+                                </div>
+
+                                {/* Battlemetrics Rank */}
+                                <div className="bg-[#050505] p-6 border border-zinc-900/60 relative">
+                                    <div className="absolute top-0 left-0 w-1.5 h-1.5 border-t border-l border-cyan-400"></div>
+                                    <div className="text-gray-500 font-mono-jb text-[10px] uppercase tracking-widest mb-1">Battlemetrics Rank</div>
+                                    <div className="text-2xl sm:text-3xl font-unbounded font-bold text-white">
+                                        {apiStatus === 'loading' ? (
+                                            <span className="text-sm font-normal text-gray-500 font-mono-jb">Syncing...</span>
+                                        ) : apiStatus === 'error' ? (
+                                            "#342"
+                                        ) : (
+                                            `#${serverData.rank}`
+                                        )}
+                                    </div>
+                                    <p className="text-[10px] text-gray-500 mt-2">Rank index among total online Rust realms</p>
+                                </div>
+
+                            </div>
+
+                            <div className="mt-8 grid grid-cols-1 lg:grid-cols-3 gap-6 items-stretch">
+                                
+                                <div className="lg:col-span-2 bg-[#050505] p-8 border border-zinc-900/80 flex flex-col justify-between">
+                                    <div className="space-y-3">
+                                        <span className="bg-cyan-950/80 text-cyan-400 text-[10px] font-bold px-2 py-1 uppercase tracking-widest border border-cyan-900">Wipe Routine</span>
+                                        <h3 className="text-lg sm:text-xl font-bold font-unbounded text-white uppercase">Wipe Frequency & Policies</h3>
+                                        <p className="text-gray-400 text-sm leading-relaxed">
+                                            Eclipse maintains high performance and fairness. We enforce a **Fresh Wipe Every Friday at 11:30 AM IST**. Map details are completely refreshed and Blueprints clear according to facepunch schedule, creating a balanced playground for Solo, Duo, and Trio players in Asia.
+                                        </p>
+                                    </div>
+
+                                    <div className="grid grid-cols-2 gap-4 mt-6 pt-6 border-t border-zinc-900">
+                                        <div>
+                                            <div className="text-[10px] font-mono-jb text-gray-500 uppercase">Map Wipe Schedule</div>
+                                            <div className="text-white font-bold text-xs sm:text-sm">Weekly Friday 11:30 AM IST</div>
+                                        </div>
+                                        <div>
+                                            <div className="text-[10px] font-mono-jb text-gray-500 uppercase">Blueprint Configuration</div>
+                                            <div className="text-cyan-400 font-bold text-xs sm:text-sm">Standard Facepunch Cycle</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* Weekly Friday 11:30 AM Wipe Countdown Card */}
+                                <div className="bg-[#050505] p-8 border border-cyan-500/30 flex flex-col justify-between text-center relative overflow-hidden">
+                                    <div className="absolute top-0 right-0 w-16 h-16 bg-cyan-400/5 rounded-full blur-xl pointer-events-none"></div>
+                                    
+                                    <div className="space-y-1">
+                                        <span className="text-yellow-400 text-[10px] font-bold uppercase tracking-widest font-mono-jb">Next Friday Wipe In</span>
+                                        <div className="text-xs text-gray-400">Scheduled: Fridays @ 11:30 AM IST</div>
+                                    </div>
+
+                                    {/* Time displays */}
+                                    <div className="grid grid-cols-4 gap-2 my-6">
+                                        <div className="bg-black/40 p-2 border border-zinc-900">
+                                            <div className="font-unbounded text-xl sm:text-2xl font-bold text-white">{timeLeft.days}</div>
+                                            <div className="text-[8px] font-mono-jb text-gray-500 uppercase mt-1">Days</div>
+                                        </div>
+                                        <div className="bg-black/40 p-2 border border-zinc-900">
+                                            <div className="font-unbounded text-xl sm:text-2xl font-bold text-white">{timeLeft.hours}</div>
+                                            <div className="text-[8px] font-mono-jb text-gray-500 uppercase mt-1">Hrs</div>
+                                        </div>
+                                        <div className="bg-black/40 p-2 border border-zinc-900">
+                                            <div className="font-unbounded text-xl sm:text-2xl font-bold text-white">{timeLeft.minutes}</div>
+                                            <div className="text-[8px] font-mono-jb text-gray-500 uppercase mt-1">Mins</div>
+                                        </div>
+                                        <div className="bg-black/40 p-2 border border-zinc-900">
+                                            <div className="font-unbounded text-xl sm:text-2xl font-bold text-cyan-400 animate-pulse">{timeLeft.seconds}</div>
+                                            <div className="text-[8px] font-mono-jb text-gray-500 uppercase mt-1">Secs</div>
+                                        </div>
+                                    </div>
+
+                                    <a 
+                                        href={discordLink}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className="w-full inline-block py-2.5 bg-cyan-950/50 hover:bg-cyan-500 hover:text-black border border-cyan-500/40 text-cyan-400 text-xs font-bold uppercase tracking-wider transition-all"
+                                    >
+                                        Get Wipe Notifications
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </section>
+
+                    {}
+                    {/* Rules Section */}
+                    <section id="rules" className="relative py-24 bg-black/40 border-y border-cyan-950 px-4 sm:px-6 lg:px-8 z-10">
+                        <div className="max-w-7xl mx-auto">
+                            
+                            <div className="text-center max-w-2xl mx-auto mb-16">
+                                <span className="text-cyan-400 font-mono-jb text-xs tracking-widest uppercase">Safe & Competitive Environment</span>
+                                <h2 className="font-unbounded text-2xl sm:text-3xl font-black text-white uppercase mt-1">
+                                    Eclipse Server Rules
+                                </h2>
+                                <p className="text-gray-400 text-xs sm:text-sm mt-3">
+                                    We focus heavily on game rules integrity. Click on any card below to view detailed clauses and details.
+                                </p>
+                            </div>
+
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+                                {rules.map((rule, idx) => {
+                                    const isExpanded = expandedRule === idx;
+                                    return (
+                                        <div 
+                                            key={idx}
+                                            onClick={() => setExpandedRule(isExpanded ? null : idx)}
+                                            className={`bg-[#050505] p-6 border transition-all duration-300 cursor-pointer relative group ${
+                                                isExpanded ? 'border-cyan-400 shadow-[0_0_15px_rgba(6,182,212,0.15)]' : 'border-zinc-900 hover:border-cyan-950'
+                                            }`}
+                                        >
+                                            <div className="absolute top-4 right-4 text-zinc-600 group-hover:text-cyan-400 transition-colors">
+                                                {isExpanded ? (
+                                                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
+                                                    </svg>
+                                                ) : (
+                                                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                                                    </svg>
+                                                )}
+                                            </div>
+
+                                            <div className="flex items-start gap-4">
+                                                <span className="text-2xl select-none">{rule.icon}</span>
+                                                <div className="space-y-1 pr-6">
+                                                    <h3 className="text-base font-bold text-white uppercase font-unbounded">{rule.title}</h3>
+                                                    <p className="text-gray-400 text-xs sm:text-sm">{rule.summary}</p>
+                                                    
+                                                    {isExpanded && (
+                                                        <div className="pt-4 mt-4 border-t border-zinc-900 text-gray-400 text-xs leading-relaxed">
+                                                            {rule.details}
+                                                        </div>
+                                                    )}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    );
+                                })}
+                            </div>
+
+                        </div>
+                    </section>
+
+                    {}
+                    {/* Command Operations Section */}
+                    <section id="team" className="relative py-24 bg-black/60 border-b border-cyan-950 px-4 sm:px-6 lg:px-8 z-10">
+                        <div className="max-w-7xl mx-auto">
+                            
+                            <div className="text-center max-w-2xl mx-auto mb-16">
+                                <span className="text-cyan-400 font-mono-jb text-xs tracking-widest uppercase">TRUST & VERIFICATION</span>
+                                <h2 className="font-unbounded text-2xl sm:text-3xl font-black text-white uppercase mt-1">
+                                    Command & Staff
+                                </h2>
+                                <p className="text-gray-400 text-xs sm:text-sm mt-3">
+                                    Meet the operational founder and management team of the IND/SEA Eclipse network.
+                                </p>
+                            </div>
+
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                                
+                                {/* Owner Profile Card */}
+                                <div className="bg-[#050505] p-8 border border-cyan-500/30 relative">
+                                    {/* Tech Borders */}
+                                    <div className="absolute top-0 left-0 w-3 h-3 border-t-2 border-l-2 border-cyan-400"></div>
+                                    <div className="absolute bottom-0 right-0 w-3 h-3 border-b-2 border-r-2 border-cyan-400"></div>
+                                    
+                                    <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6">
+                                        <div className="relative">
+                                            <img 
+                                                src="https://placehold.co/150x150/06b6d4/ffffff?text=ECLIPSE" 
+                                                alt="Eclipse Server Owner"
+                                                className="w-20 h-20 rounded-none border border-cyan-400 shadow-[0_0_10px_rgba(6,182,212,0.3)] object-cover"
+                                            />
+                                            <span className="absolute -bottom-1 -right-1 flex h-4 w-4">
+                                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                                                <span className="relative inline-flex rounded-full h-4 w-4 bg-green-500 border-2 border-[#050505]"></span>
+                                            </span>
+                                        </div>
+
+                                        <div className="space-y-3 text-center sm:text-left flex-1">
+                                            <div className="flex items-center justify-center sm:justify-start gap-2">
+                                                <Icons.Crown />
+                                                <span className="font-unbounded text-base font-black text-white uppercase">Eclipse Owner</span>
+                                            </div>
+                                            <p className="text-[10px] font-mono-jb text-cyan-400 tracking-widest uppercase">SERVER FOUNDER & LEAD SYSTEM DEV</p>
+                                            <p className="text-gray-400 text-xs leading-relaxed">
+                                                Manages global high-performance infrastructure, custom hardware routing protocols, anti-cheat integrations, and core vanilla gameplay balancing.
+                                            </p>
+                                            <div className="pt-2">
+                                                <span className="bg-zinc-950 px-3 py-1 text-[10px] font-mono-jb border border-zinc-900 text-gray-500 uppercase">
+                                                    Status: Monitoring Nodes
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* Support Team Card */}
+                                <div className="bg-[#050505] p-8 border border-zinc-900 relative">
+                                    <div className="absolute top-0 left-0 w-3 h-3 border-t-2 border-l-2 border-zinc-800"></div>
+                                    <div className="absolute bottom-0 right-0 w-3 h-3 border-b-2 border-r-2 border-zinc-800"></div>
+                                    
+                                    <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6">
+                                        <div className="relative">
+                                            <img 
+                                                src="https://placehold.co/150x150/1f2937/9ca3af?text=STAFF" 
+                                                alt="Eclipse Server Support Staff"
+                                                className="w-20 h-20 rounded-none border border-zinc-800 object-cover"
+                                            />
+                                            <span className="absolute -bottom-1 -right-1 flex h-4 w-4">
+                                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+                                                <span className="relative inline-flex rounded-full h-4 w-4 bg-cyan-400 border-2 border-[#050505]"></span>
+                                            </span>
+                                        </div>
+
+                                        <div className="space-y-3 text-center sm:text-left flex-1">
+                                            <div className="flex items-center justify-center sm:justify-start gap-2 text-gray-400">
+                                                <span className="font-unbounded text-base font-black text-white uppercase">Moderation Guild</span>
+                                            </div>
+                                            <p className="text-[10px] font-mono-jb text-zinc-500 tracking-widest uppercase">ACTIVE PLAYER MODS / 24-7 REPORTS</p>
+                                            <p className="text-gray-400 text-xs leading-relaxed">
+                                                Strict, non-playing administration members reviewing logs, spectator feeds, and player tickets submitted in the Discord portal. Zero cheat leniency.
+                                            </p>
+                                            <div className="pt-2">
+                                                <a 
+                                                    href={discordLink} 
+                                                    target="_blank" 
+                                                    rel="noreferrer"
+                                                    className="inline-block bg-cyan-950/30 hover:bg-cyan-500 text-cyan-400 hover:text-black border border-cyan-800 text-[10px] font-bold px-3 py-1 uppercase tracking-wider transition-all"
+                                                >
+                                                    Open Support Ticket
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </section>
+
+                    {}
+                    {/* Shop Perks Section */}
+                    <section id="shop" className="relative py-24 px-4 sm:px-6 lg:px-8 z-10">
+                        <div className="max-w-7xl mx-auto">
+                            
+                            <div className="text-center max-w-2xl mx-auto mb-16">
+                                <span className="bg-cyan-950 text-cyan-400 border border-cyan-900 font-mono-jb text-[10px] tracking-widest px-3 py-1 uppercase rounded-sm font-bold">
+                                    UPCOMING SHOP
+                                </span>
+                                <h2 className="font-unbounded text-2xl sm:text-3xl font-black text-white uppercase mt-4">
+                                    VIP Perks
+                                </h2>
+                                <p className="text-gray-400 text-xs sm:text-sm mt-3">
+                                    All upcoming contribution perks are designed strictly around queue priority and cosmetic upgrades. Pay-to-win kits are not allowed.
+                                </p>
+                            </div>
+
+                            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch max-w-6xl mx-auto">
+                                {shopPackages.map((pkg) => (
+                                    <div 
+                                        key={pkg.id}
+                                        className={`bg-[#050505] p-8 border flex flex-col justify-between relative transition-all duration-300 ${pkg.color} ${pkg.shadow}`}
+                                    >
+                                        <span className="absolute top-0 right-8 -translate-y-1/2 bg-cyan-950 text-cyan-400 text-[9px] font-black tracking-widest px-3 py-1 uppercase border border-cyan-900">
+                                            {pkg.statusBadge}
+                                        </span>
+
+                                        <div className="space-y-6">
+                                            <div>
+                                                <h3 className="text-lg font-bold uppercase font-unbounded text-white">{pkg.name}</h3>
+                                                <p className="text-xs text-gray-400 mt-2">{pkg.description}</p>
+                                            </div>
+
+                                            <div className="flex items-baseline">
+                                                <span className="font-unbounded text-2xl font-black text-white">{pkg.price}</span>
+                                            </div>
+                                        </div>
+
+                                        <div className="pt-8 mt-8 border-t border-zinc-900">
+                                            <button 
+                                                onClick={() => handleOpenUpcomingNotice(pkg)}
+                                                className="w-full py-3 border border-cyan-950 bg-cyan-950/10 text-cyan-400 font-bold uppercase tracking-wider text-[10px] hover:border-cyan-400 hover:bg-cyan-400 hover:text-black transition-all"
+                                            >
+                                                View Reservation Info
+                                            </button>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+
+                            {/* Monetization Disclaimer */}
+                            <div className="mt-12 bg-[#050505] border border-zinc-900/60 p-6 max-w-4xl mx-auto flex items-start gap-3">
+                                <div className="text-yellow-500 flex-shrink-0 mt-0.5">
+                                    <Icons.ShieldAlert />
+                                </div>
+                                <div className="text-[11px] text-gray-500 leading-relaxed">
+                                    <strong className="text-zinc-300">VIP Policy:</strong> Contribution perks are upcoming and support security mitigations. Absolutely zero items, ammunition spawns, or base repair advantages are sold.
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    {/* Discord Footer Engagement Banner */}
+                    <section className="relative pb-24 px-4 sm:px-6 lg:px-8 z-10">
+                        <div className="max-w-5xl mx-auto bg-gradient-to-b from-cyan-950/10 to-black/90 border border-cyan-950 p-8 sm:p-12 text-center relative overflow-hidden">
+                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-cyan-500/5 rounded-full blur-3xl pointer-events-none"></div>
+
+                            <div className="relative z-10 space-y-6">
+                                <span className="text-cyan-400 font-mono-jb text-xs tracking-widest uppercase font-bold">COMMUNITY</span>
+                                
+                                <h2 className="font-unbounded text-2xl sm:text-3xl font-black text-white uppercase leading-tight max-w-2xl mx-auto">
+                                    Never Face The Eclipse Alone.
+                                </h2>
+
+                                <p className="text-gray-400 text-xs sm:text-sm max-w-xl mx-auto leading-relaxed">
+                                    Find teammates, post wipe media captures, report rules violations directly, vote on server adjustments, or check announcements.
+                                </p>
+
+                                <div className="pt-4">
+                                    <a 
+                                        href={discordLink}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className="inline-flex items-center justify-center px-8 py-4 bg-[#5865F2] hover:bg-[#4752C4] text-white font-extrabold uppercase tracking-wider text-xs transition-all duration-200"
+                                    >
+                                        <Icons.Discord />
+                                        Join the Eclipse Discord
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    {/* Footer */}
+                    <footer className="relative bg-black border-t border-zinc-900/60 py-12 px-4 sm:px-6 lg:px-8 z-10 text-gray-500 text-xs">
+                        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+                            
+                            <div className="space-y-2">
+                                <div className="font-unbounded text-md font-black text-white tracking-widest uppercase">
+                                    ECLIPSE<span className="text-cyan-400 text-xs ml-1">// RUST</span>
+                                </div>
+                                <p className="text-zinc-600 text-[10px]">Pure Survival, Vanilla Spirit.</p>
+                            </div>
+
+                            <div className="flex gap-6">
+                                <a href="#live" className="hover:text-cyan-400 transition-colors">Home</a>
+                                <a href="#rules" className="hover:text-cyan-400 transition-colors">Rules</a>
+                                <a href="#team" className="hover:text-cyan-400 transition-colors">Team</a>
+                                <a href="#shop" className="hover:text-cyan-400 transition-colors">Perks</a>
+                                <a href={battlemetricsLink} target="_blank" rel="noreferrer" className="hover:text-cyan-400 transition-colors">
+                                    Battlemetrics
+                                </a>
+                            </div>
+
+                            <div className="text-center md:text-right space-y-1">
+                                <p>© 2026 IND/SEA Eclipse. All Rights Reserved.</p>
+                                <p className="text-zinc-600 text-[10px]">Not affiliated with Facepunch Studios.</p>
+                                <div className="inline-flex items-center text-[10px] text-zinc-700 bg-zinc-950 px-2 py-0.5 border border-zinc-900 mt-2">
+                                    <span className="w-1.5 h-1.5 bg-cyan-400 rounded-full mr-1.5 animate-pulse"></span>
+                                    Made with Emergent
+                                </div>
+                            </div>
+
+                        </div>
+                    </footer>
+
+                    {/* Upcoming Perk Dialog Info Modal */}
+                    {isCheckoutOpen && (
+                        <div className="fixed inset-0 bg-black/95 backdrop-blur-md z-50 flex items-center justify-center p-4">
+                            <div className="bg-[#050505] border border-cyan-400 w-full max-w-lg p-6 relative overflow-hidden text-gray-200">
+                                <div className="absolute top-0 left-0 w-2 h-2 border-t border-l border-cyan-400"></div>
+                                <div className="absolute top-0 right-0 w-2 h-2 border-t border-r border-cyan-400"></div>
+                                <div className="absolute bottom-0 left-0 w-2 h-2 border-b border-l border-cyan-400"></div>
+                                <div className="absolute bottom-0 right-0 w-2 h-2 border-b border-r border-cyan-400"></div>
+
+                                {/* Modal Header */}
+                                <div className="flex justify-between items-center pb-4 border-b border-zinc-900">
+                                    <div className="font-unbounded text-xs sm:text-sm font-bold text-cyan-400 uppercase tracking-widest">
+                                        PERK ANNOUNCEMENT
+                                    </div>
+                                    <button 
+                                        onClick={() => setIsCheckoutOpen(false)}
+                                        className="text-gray-500 hover:text-white font-mono-jb text-xs hover:border-b border-white"
+                                    >
+                                        [CLOSE]
+                                    </button>
+                                </div>
+
+                                {/* Upcoming Information Content */}
+                                <div className="space-y-6 pt-6">
+                                    <div className="bg-zinc-950 p-4 border border-zinc-900">
+                                        <span className="text-[9px] font-mono-jb text-cyan-400 uppercase tracking-widest block">SELECTED TIER:</span>
+                                        <div className="text-base sm:text-lg font-bold text-white font-unbounded mt-1">{shopCart?.name}</div>
+                                        <div className="text-sm font-bold text-gray-400 font-mono-jb mt-2">{shopCart?.price}</div>
+                                    </div>
+
+                                    <div className="p-4 bg-cyan-950/10 border border-cyan-900 text-cyan-400 text-xs leading-relaxed rounded-none">
+                                        <strong>Launching Soon:</strong> The VIP Perk store is currently in development. Full package details will be listed prior to live launch. Keep an eye on our Discord announcement channel for early release news.
+                                    </div>
+
+                                    <div className="flex gap-4">
+                                        <button 
+                                            onClick={() => setIsCheckoutOpen(false)}
+                                            className="flex-1 py-3 bg-zinc-950 hover:bg-zinc-900 text-gray-400 font-bold uppercase text-xs border border-zinc-900"
+                                        >
+                                            Return to Dashboard
+                                        </button>
+                                        <a 
+                                            href={discordLink}
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            className="flex-1 py-3 bg-cyan-400 text-black text-center font-extrabold uppercase text-xs hover:bg-cyan-300"
+                                        >
+                                            Join Discord For Alerts
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    )}
+
+                </div>
+            );
+        }
+
+        // Render application securely
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
+</body>
+</html>
